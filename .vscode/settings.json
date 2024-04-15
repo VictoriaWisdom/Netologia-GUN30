@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Victoria_gun30.sln"
+    "dotnet.defaultSolution": "Netologia_Gun30.sln"
 }
