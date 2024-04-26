@@ -12,7 +12,7 @@ namespace Tanks
 		[Inject]
 		private TankControls.TankActions _tank;
 		[Inject]
-		private TankControls.Turret _turret;
+		private TankControls.TurretActions _turret;
 
 		[SerializeField, Min(0.1f), Tooltip("Скорость вращения башни")]
 		private float _rotateSpeed = 1f;

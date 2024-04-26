@@ -118,7 +118,7 @@ namespace Tanks
             ]
         },
         {
-            ""name"": ""Turrent"",
+            ""name"": ""Turret"",
             ""id"": ""1ca7c4f2-97ee-4f69-b4dc-00b52e08826e"",
             ""actions"": [
                 {
@@ -172,10 +172,10 @@ namespace Tanks
             m_Tank = asset.FindActionMap("Tank", throwIfNotFound: true);
             m_Tank_Handbreak = m_Tank.FindAction("Handbreak", throwIfNotFound: true);
             m_Tank_Movement = m_Tank.FindAction("Movement", throwIfNotFound: true);
-            // Turrent
-            m_Turrent = asset.FindActionMap("Turrent", throwIfNotFound: true);
-            m_Turrent_Fire = m_Turrent.FindAction("Fire", throwIfNotFound: true);
-            m_Turrent_Focus = m_Turrent.FindAction("Focus", throwIfNotFound: true);
+            // Turret
+            m_Turret = asset.FindActionMap("Turret", throwIfNotFound: true);
+            m_Turret_Fire = m_Turret.FindAction("Fire", throwIfNotFound: true);
+            m_Turret_Focus = m_Turret.FindAction("Focus", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -288,26 +288,26 @@ namespace Tanks
         }
         public TankActions @Tank => new TankActions(this);
 
-        // Turrent
-        private readonly InputActionMap m_Turrent;
-        private List<ITurrentActions> m_TurrentActionsCallbackInterfaces = new List<ITurrentActions>();
-        private readonly InputAction m_Turrent_Fire;
-        private readonly InputAction m_Turrent_Focus;
-        public struct TurrentActions
+        // Turret
+        private readonly InputActionMap m_Turret;
+        private List<ITurretActions> m_TurretActionsCallbackInterfaces = new List<ITurretActions>();
+        private readonly InputAction m_Turret_Fire;
+        private readonly InputAction m_Turret_Focus;
+        public struct TurretActions
         {
             private @TankControls m_Wrapper;
-            public TurrentActions(@TankControls wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Fire => m_Wrapper.m_Turrent_Fire;
-            public InputAction @Focus => m_Wrapper.m_Turrent_Focus;
-            public InputActionMap Get() { return m_Wrapper.m_Turrent; }
+            public TurretActions(@TankControls wrapper) { m_Wrapper = wrapper; }
+            public InputAction @Fire => m_Wrapper.m_Turret_Fire;
+            public InputAction @Focus => m_Wrapper.m_Turret_Focus;
+            public InputActionMap Get() { return m_Wrapper.m_Turret; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
             public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(TurrentActions set) { return set.Get(); }
-            public void AddCallbacks(ITurrentActions instance)
+            public static implicit operator InputActionMap(TurretActions set) { return set.Get(); }
+            public void AddCallbacks(ITurretActions instance)
             {
-                if (instance == null || m_Wrapper.m_TurrentActionsCallbackInterfaces.Contains(instance)) return;
-                m_Wrapper.m_TurrentActionsCallbackInterfaces.Add(instance);
+                if (instance == null || m_Wrapper.m_TurretActionsCallbackInterfaces.Contains(instance)) return;
+                m_Wrapper.m_TurretActionsCallbackInterfaces.Add(instance);
                 @Fire.started += instance.OnFire;
                 @Fire.performed += instance.OnFire;
                 @Fire.canceled += instance.OnFire;
@@ -316,7 +316,7 @@ namespace Tanks
                 @Focus.canceled += instance.OnFocus;
             }
 
-            private void UnregisterCallbacks(ITurrentActions instance)
+            private void UnregisterCallbacks(ITurretActions instance)
             {
                 @Fire.started -= instance.OnFire;
                 @Fire.performed -= instance.OnFire;
@@ -326,27 +326,27 @@ namespace Tanks
                 @Focus.canceled -= instance.OnFocus;
             }
 
-            public void RemoveCallbacks(ITurrentActions instance)
+            public void RemoveCallbacks(ITurretActions instance)
             {
-                if (m_Wrapper.m_TurrentActionsCallbackInterfaces.Remove(instance))
+                if (m_Wrapper.m_TurretActionsCallbackInterfaces.Remove(instance))
                     UnregisterCallbacks(instance);
             }
 
-            public void SetCallbacks(ITurrentActions instance)
+            public void SetCallbacks(ITurretActions instance)
             {
-                foreach (var item in m_Wrapper.m_TurrentActionsCallbackInterfaces)
+                foreach (var item in m_Wrapper.m_TurretActionsCallbackInterfaces)
                     UnregisterCallbacks(item);
-                m_Wrapper.m_TurrentActionsCallbackInterfaces.Clear();
+                m_Wrapper.m_TurretActionsCallbackInterfaces.Clear();
                 AddCallbacks(instance);
             }
         }
-        public TurrentActions @Turrent => new TurrentActions(this);
+        public TurretActions @Turret => new TurretActions(this);
         public interface ITankActions
         {
             void OnHandbreak(InputAction.CallbackContext context);
             void OnMovement(InputAction.CallbackContext context);
         }
-        public interface ITurrentActions
+        public interface ITurretActions
         {
             void OnFire(InputAction.CallbackContext context);
             void OnFocus(InputAction.CallbackContext context);

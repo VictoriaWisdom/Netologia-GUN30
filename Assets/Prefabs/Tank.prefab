@@ -565,7 +565,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0.2
-  m_Mass: 20
+  m_Mass: 15
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -636,7 +636,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0.2
-  m_Mass: 20
+  m_Mass: 15
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -707,7 +707,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0.2
-  m_Mass: 20
+  m_Mass: 15
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -876,7 +876,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.1
   m_ForceAppPointDistance: 0.2
-  m_Mass: 20
+  m_Mass: 15
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -926,13 +926,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8417861878377337072}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.093829006, y: -0.000000017122112, z: 0.0000000016136695, w: 0.99558836}
-  m_LocalPosition: {x: 0.3, y: 3.28, z: -7.89}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.104594, y: -0.07765182, z: 0.0039585712, w: 0.991471}
+  m_LocalPosition: {x: 0.9, y: 2.7, z: -6.5}
+  m_LocalScale: {x: 1, y: 0.84698, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3334302884480485940}
-  m_LocalEulerAnglesHint: {x: 10.768, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.006, y: -9.008, z: -0.492}
 --- !u!20 &4537446045005513820
 Camera:
   m_ObjectHideFlags: 0
@@ -966,7 +966,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 36.709717
+  field of view: 32.741947
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -1104,7 +1104,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8987816544028267333}
   serializedVersion: 4
-  m_Mass: 3000
+  m_Mass: 5000
   m_Drag: 0.1
   m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1183,7 +1183,7 @@ MonoBehaviour:
   _downforce: 100
   _slipLimit: 0.3
   _reverseMult: 0.4
-  _maxSpeedFOV: 200
+  _maxSpeedFOV: 254
   _fov: {x: 40, y: 40}
   _debugTorque: 0
 --- !u!82 &1225370885966020307
