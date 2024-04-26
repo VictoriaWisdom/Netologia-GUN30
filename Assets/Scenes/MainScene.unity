@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -2381,7 +2381,6 @@ SceneRoots:
   - {fileID: 607362551}
   - {fileID: 93401507}
   - {fileID: 1492216466}
-  - {fileID: 941843020}
   - {fileID: 1268580201071125464}
   - {fileID: 3876610280547134875}
   - {fileID: 3752747840639928334}
@@ -2390,3 +2389,4 @@ SceneRoots:
   - {fileID: 5387201570701367354}
   - {fileID: 1079948880368934845}
   - {fileID: 8825820808647316131}
+  - {fileID: 941843020}
