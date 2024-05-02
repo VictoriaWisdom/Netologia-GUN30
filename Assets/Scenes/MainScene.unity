@@ -2317,13 +2317,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 874661322040228279, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446531409096719611, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1601491657461060174, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
       propertyPath: m_Radius
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 1601491657461060174, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_WheelDampingRate
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1930968658798366740, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
       propertyPath: m_Radius
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930968658798366740, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_WheelDampingRate
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3334302884480485940, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2369,9 +2385,25 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 3588712460432330581, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_WheelDampingRate
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435461890033050996, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8028511697540351319, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
       propertyPath: m_Radius
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028511697540351319, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_WheelDampingRate
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172049689387648110, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8987816544028267333, guid: 46bf5828011708b42ad3f20773cd4f64, type: 3}
       propertyPath: m_Name
