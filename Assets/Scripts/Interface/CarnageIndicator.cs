@@ -102,7 +102,7 @@ namespace Tanks.Interface
 			if(_hasAudio && _tickerSum.clip != null && !_tickerSum.playOnAwake && !_tickerSum.loop) { }
 			else
 			{
-                global::System.Object value = Debug.Log("Incorrect AudioSource!", gameObject);
+				Debug.Log("Incorrect AudioSource!", gameObject);
 				_hasAudio = false;
 			}
 			
@@ -117,7 +117,7 @@ namespace Tanks.Interface
 			var mults = _indicatorFill.GetComponentsInChildren<TextMeshProUGUI>();
 			if (mults.Length != _settings.Settings.Length)
 			{
-                global::System.Object value = Debug.LogError("Incorrect settings in Indicator!", _settings);
+				Debug.LogError("Incorrect settings in Indicator!", _settings);
 				enabled = false;
 				return;
 			}
