@@ -227,9 +227,9 @@ MonoBehaviour:
   <FirePoint>k__BackingField: {fileID: 4939437288222806132}
   _controller: {fileID: 3705782344228122071}
   <Velocity>k__BackingField: 100
-  _reloadDelay: 1.5
+  _reloadDelay: 1
   _emitSmokeCount: 3
-  _firePower: 120000
+  _firePower: 150000
   _muzzleEffect: {fileID: 9014862763884441306}
   _smokeEffect: {fileID: 2009761329036808135}
   _hitEffect: {fileID: 198656289721292014, guid: 318d92bfb9c51a24489f25da35f234a0,
@@ -380,7 +380,7 @@ Transform:
   m_GameObject: {fileID: 3582342630218740018}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.001, z: 0.919}
+  m_LocalPosition: {x: 0, y: 0, z: 0.898}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -776,7 +776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6108029981005860577}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11333321, y: 0.000000018155403, z: -0.000000002070953, w: 0.99355704}
+  m_LocalRotation: {x: 0.113598645, y: -0, z: -0, w: 0.99352676}
   m_LocalPosition: {x: 0, y: 2.39, z: -5.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
