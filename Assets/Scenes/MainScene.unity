@@ -1076,12 +1076,12 @@ PrefabInstance:
     - target: {fileID: 5443128147565412036, guid: 4f497ba3fcaf2cb419c3489bf8b3ff1e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000020792585
+      value: 0.000000018154182
       objectReference: {fileID: 0}
     - target: {fileID: 5443128147565412036, guid: 4f497ba3fcaf2cb419c3489bf8b3ff1e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000023841837
+      value: -0.000000002081651
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1863,8 +1863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb71d6d589fd4f1292660e4fa94176a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _liner: {fileID: 0}
-  _count: 5
+  _liner: {fileID: 1715398638}
+  _count: 20
   _step: 0.5
 --- !u!120 &1715398638
 LineRenderer:
@@ -1887,7 +1887,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 776677ab3818fb249adaca05f4e04545, type: 2}
+  - {fileID: 2100000, guid: f793f5f32c492d14c97d1ccdbc801e5e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1916,8 +1916,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.18032841
+        time: 0.078186035
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1930,7 +1930,7 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 0.9399502, b: 0, a: 1}
+      key1: {r: 0.9427508, g: 1, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3200,12 +3200,12 @@ PrefabInstance:
     - target: {fileID: 3783477073380046996, guid: 46bf5828011708b42ad3f20773cd4f64,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000020792585
+      value: 0.000000018154182
       objectReference: {fileID: 0}
     - target: {fileID: 3783477073380046996, guid: 46bf5828011708b42ad3f20773cd4f64,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000023841837
+      value: -0.000000002081651
       objectReference: {fileID: 0}
     - target: {fileID: 4939437288222806132, guid: 46bf5828011708b42ad3f20773cd4f64,
         type: 3}
