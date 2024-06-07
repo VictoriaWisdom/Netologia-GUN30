@@ -2087,6 +2087,29 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
+--- !u!1 &1802351491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505845306078760820, guid: 705ba9c8b2dc666408a751d9e8ad4661,
+    type: 3}
+  m_PrefabInstance: {fileID: 2628850091058944895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1802351495
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802351491}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b295a7be71779d34fab3f17e3f1ff246, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b295a7be71779d34fab3f17e3f1ff246, type: 2}
+  - {fileID: 7400000, guid: 8978106796460d342bd22b8d1fef22cb, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &1960119702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2971,12 +2994,16 @@ PrefabInstance:
     - target: {fileID: 6504955588891155417, guid: 705ba9c8b2dc666408a751d9e8ad4661,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: GUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1505845306078760820, guid: 705ba9c8b2dc666408a751d9e8ad4661,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1802351495}
   m_SourcePrefab: {fileID: 100100000, guid: 705ba9c8b2dc666408a751d9e8ad4661, type: 3}
 --- !u!1001 &3752747840639928334
 PrefabInstance:
